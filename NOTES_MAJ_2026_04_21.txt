@@ -1,0 +1,9 @@
+MAJ GSB Future
+
+- base neuve : jsb_future
+- ajout du journal d'actions
+- suppression du dossier noyau
+- nouvelle page admin_fiches.php
+- nouvelle page journal.php
+- dates harmonisées en JJ/MM/AAAA côté affichage
+- connexion PDO renforcée

@@ -1,0 +1,82 @@
+ARBORESCENCE :
+
+BTS_SIO2/
+└── GSB_Frais_POO1/
+│
+├── 📁 api/                          → API REST (mobile)
+│   ├── connexion.php
+│   ├── deconnexion.php
+│   ├── fiches.php
+│   ├── fiche_detail.php
+│   ├── hors_forfaits.php
+│   ├── justificatifs.php
+│   ├── ajout_fiche.php
+│   └── utils/
+│       ├── AuthMiddleware.php
+│       └── ReponseJson.php
+│
+├── 📁 configuration/               → Config globale
+│   ├── config.php
+│   ├── base.php
+│   └── securite.php
+│
+├── 📁 controleurs/                → Logique MVC
+│   ├── AuthControleur.php
+│   ├── FicheControleur.php
+│   └── ComptableControleur.php
+│
+├── 📁 modeles/                    → Accès BDD (POO)
+│   ├── Utilisateur.php
+│   ├── Fiche.php
+│   ├── LigneFrais.php
+│   └── Justificatif.php
+│
+├── 📁 includes/                   → Fonctions utilitaires partagées
+│   ├── Controleur.php
+│   ├── Routeur.php
+│   └── Vue.php
+│
+├── 📁 public/                     → Entrée web (FRONT)
+│   ├── index.php
+│   ├── tableau_bord.php
+│   ├── visiteur.php
+│   ├── comptable.php
+│   ├── synthese.php
+│   ├── deconnexion.php
+│
+├── 📁 ressources/                 → Assets (design)
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── app.js
+│   └── images/
+│
+├── 📁 squelette/                  → Layout (header/footer)
+│   ├── header.php
+│   └── footer.php
+│
+├── 📁 stockage/                   → Upload fichiers
+│   └── justificatifs/
+│
+├── 📁 vues/                       → Pages HTML/PHP
+│   ├── auth/
+│   │   └── connexion.php
+│   │
+│   ├── visiteur/
+│   │   ├── tableau_bord.php
+│   │   ├── liste_fiches.php
+│   │   ├── detail_fiche.php
+│   │   └── ajouter_fiche.php
+│   │
+│   ├── comptable/
+│   │   ├── validation.php
+│   │   └── detail.php
+│   │
+│   └── erreurs/
+│       └── 404.php
+│
+├── 📁 sql/                        → Base de données
+│   └── gsb_frais_poo.sql
+│
+├── 📄 .htaccess                   → Routing propre
+├── 📄 README.md
